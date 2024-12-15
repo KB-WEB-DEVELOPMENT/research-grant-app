@@ -20,7 +20,7 @@ class Research extends Model
     *
     * @var array<int, string>
     */
-    protected $fillable = ['researcher_id','dept_name','research_title','research_description','grant_amount_requested'];
+    protected $fillable = ['id','researcher_id','dept_name','research_title','research_description','grant_amount_requested'];
 
 	/**
     * Write code on Method
