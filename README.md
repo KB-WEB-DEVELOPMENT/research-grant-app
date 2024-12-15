@@ -126,7 +126,7 @@ php artisan key:generate
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you seeded, say, the Governance database table (step 8 above), the following route should output json data:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**http://localhost:8000/api/governance-bugdets**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**http://localhost:8000/api/governance-budgets**
 
 ## 3. Usage <a name="usage"></a>
 
