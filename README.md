@@ -148,7 +148,7 @@ The project REST API verbs and their description:
 ## 4. Features <a name="features"></a>
 
 
-1. Note that only **```one database```** and **```three tables```** are used in the project.
+1. Note that only ==20-22==   **```one database```** and **```three tables```** are used in the project.
 
 2. A researcher can only submit a grant application. A Governance employee can only create a row entry in the Governance table. A Finance employee can only update the 'staff_comment' field value in a row entry in the Finance table.
 
