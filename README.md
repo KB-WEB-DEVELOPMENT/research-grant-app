@@ -134,9 +134,9 @@ The project REST API verbs and their description:
 
 |Verb|Path|Action|Description|
 |:---------|:-|:-----|:-----|
-|GET|api/governance-bugdets|index|display a list of all budgets details for each department|
-|GET|api/governance-bugdets/{governance}|show|display all budget details of one specifc department|
-|POST|api/governance-bugdets|store|create a new budget for one specific department|
+|GET|api/governance-budgets|index|display a list of all budgets details for each department|
+|GET|api/governance-budgets/{governance}|show|display all budget details of one specifc department|
+|POST|api/governance-budgets|store|create a new budget for one specific department|
 |GET|api/research-applications|index|display a list of all research grant applications containing all research grant application details|
 |GET|api/research-applications/{research}|show|display all details of one specific research grant application|
 |POST|api/research-applications|store|create a new research grant application|
