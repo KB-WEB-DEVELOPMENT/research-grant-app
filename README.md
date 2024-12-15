@@ -44,7 +44,7 @@ Please refer to the section [**Documentation**](#documentation) below to view an
 
 1. Make a new directory, open a bash console in that  directory and  clone the repository:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 `git clone https://github.com/KB-WEB-DEVELOPMENT/research-grant-app.git`
 
 2. Go to each directory (/finance, /governance, /research) and in the terminal, run each time:
@@ -110,7 +110,7 @@ php artisan key:generate
 
 9. Add phpMyAdmin service to Laravel Sail
 
-&nbsp;&nbsp;&nbsp;Follow [**Documentation**](#documentation) [[**Ref.3**]](#documentation) to add phpMyAdmin service to the project 'Research' directory of Laravel Sail docker-&nbsp;&nbsp;&nbsp;compose.yml file.
+&nbsp;&nbsp;&nbsp;Follow [**Documentation**](#documentation) [[**Ref.3**]](#documentation) to add phpMyAdmin service to the project 'Research' directory of Laravel Sail docker-compose.yml file.
 
 10. Start Laravel Sail
 
