@@ -30,98 +30,101 @@ A number of tools are necessary in order to build a Laravel microservices archit
 
 Please refer to the section [**Documentation**](#documentation) below to view and access each of the references listed below.
 
-**[Ref. 1]** *Laravel Sail:  Laravel's default Docker development environment*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Ref. 1]** *Laravel Sail:  Laravel's default Docker development environment*
 
-**[Ref. 2]** *A complete guide to Laravel Sail*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Ref. 2]** *A complete guide to Laravel Sail*
 
-**[Ref. 3]** *Adding phpMyAdmin to Sail Docker compose*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Ref. 3]** *Adding phpMyAdmin to Sail Docker compose*
 
-**[Ref. 4]** *RabbitMQ Queue driver for Laravel*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Ref. 4]** *RabbitMQ Queue driver for Laravel*
 
 ## 2. Installation <a name="installation"></a>
 
 1. Make a new directory, open a bash console in that  directory and  clone the repository:
 
-&nbsp;
-`
-git clone https://github.com/KB-WEB-DEVELOPMENT/research-grant-app.git
-`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+`git clone https://github.com/KB-WEB-DEVELOPMENT/research-grant-app.git`
+
 2. Go to each directory (/finance, /governance, /research) and in the terminal, run each time:
 
-&nbsp;
-`
-composer install 
-` 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+`composer install` 
+
 3. In the  /research directory only, run:
 
-&nbsp;
-`
-composer require vladimir-yuldashev/laravel-queue-rabbitmq
-`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+`composer require vladimir-yuldashev/laravel-queue-rabbitmq`
 
 4. Copy the the three existing .env.example files to three new .env files
 
-&nbsp;&nbsp;&nbsp;&nbsp;Note: the three .env.example files (Governance/.env.example, Finance/.env.example and Research/.env.example) already &nbsp;&nbsp;&nbsp;&nbsp;contain the configuration settings needed for the mysql &nbsp;&nbsp;&nbsp;&nbsp;database connection and RabbitMQ. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The three .env.example files (Governance/.env.example, Finance/.env.example and Research/.env.example) already &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;contain the configuration settings needed for the mysql database connection and RabbitMQ. 
 
-You should adapt those settings to your development environment.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You should adapt those settings to your development environment.
 
 5. Go to each directory (/finance, /governance, /research) and in the terminal, run:
 
-&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 `
 php artisan key:generate
 `
+
 6. Use a database tool to create an empty database (the project default database name is 'researchInstituteDB' in .env.example)
 
 7. Database migration
 
 &nbsp;&nbsp;&nbsp;&nbsp;In the /finance directory, run in the terminal:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/finance`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/finance`
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;In the /governance directory, run in the terminal:
 
-&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/governance`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/governance`
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;In the /research directory, run in the terminal:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/research`
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan migrate--path=/database/migrations/research`
+
 
 8. (Optional): Seed the database
 
 &nbsp;&nbsp;&nbsp;&nbsp;In the /governance directory, run in the terminal:
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=GovernanceSeeder`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=GovernanceSeeder`
 	
 &nbsp;&nbsp;&nbsp;&nbsp;In the /research directory, run in the terminal: 
 	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=ResearchSeeder`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=ResearchSeeder`
 	
 &nbsp;&nbsp;&nbsp;&nbsp;In the /finance directory, run in the terminal: 
 	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=FinanceSeeder`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan db:seed -–class=FinanceSeeder`
 	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will create four row entries in each table (Governance, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Research and Finance).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This will create four row entries in each table (Governance, Research and Finance).
 
 9. Add phpMyAdmin service to Laravel Sail
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow [**Documentation**](#documentation) [[**Ref.3**]](#documentation) to add phpMyAdmin service &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to the project 'Research' directory of Laravel Sail docker-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose.yml file.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Follow [**Documentation**](#documentation) [[**Ref.3**]](#documentation) to add phpMyAdmin service to the project 'Research' directory of Laravel Sail docker-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;compose.yml file.
 
 10. Start Laravel Sail
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the terminal, enter the command:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./vendor/bin/sail up`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`./vendor/bin/sail up`
 
 11. Start the local development server
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the terminal, run:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the terminal, run:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan serve`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan serve`
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you seeded, say, the Governance database table (step 8 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;above), the following route should output json data:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you seeded, say, the Governance database table (step 8 above), the following route should output json data:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**http://localhost:8000/api/governance-bugdets**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**http://localhost:8000/api/governance-bugdets**
 
 ## 3. Usage <a name="usage"></a>
 
