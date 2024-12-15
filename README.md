@@ -7,7 +7,7 @@
 6. [Documentation](#documentation)
 7. [License](#license)
 
-## 1. Project Descrption <a name="description"></a>
+## 1. Project Description <a name="description"></a>
 
 In previous projects, I used a **monolithic architecture** to build web applications. 
 
