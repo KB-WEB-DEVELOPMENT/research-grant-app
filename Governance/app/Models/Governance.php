@@ -20,7 +20,7 @@ class Governance extends Model
     *
     * @var array<int, string>
     */
-    protected $fillable = ['dept_name','dept_initial_budget','dept_current_budget'];
+    protected $fillable = ['id','dept_name','dept_initial_budget','dept_current_budget'];
 
 	/**
     * Write code on Method
