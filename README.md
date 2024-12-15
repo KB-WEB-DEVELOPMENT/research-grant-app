@@ -38,7 +38,7 @@ Please refer to the section [**Documentation**](#documentation) below to view an
 
 **[Ref. 4]** *RabbitMQ Queue driver for Laravel*
 
-## 2. Installation <a name="description"></a>
+## 2. Installation <a name="installation"></a>
 
 1. Make a new directory, open a bash console in that  directory and  clone the repository:
 
