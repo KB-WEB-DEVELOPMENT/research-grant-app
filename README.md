@@ -44,7 +44,7 @@ Please refer to the section [**Documentation**](#documentation) below to view an
 
 1. Make a new directory, open a bash console in that  directory and  clone the repository:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
 `git clone https://github.com/KB-WEB-DEVELOPMENT/research-grant-app.git`
 
 2. Go to each directory (/finance, /governance, /research) and in the terminal, run each time:
