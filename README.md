@@ -52,12 +52,12 @@ Please refer to the section [**Documentation**](#documentation) below to view an
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 `composer install` 
 
-3. In the  /research directory only, run:
+3. Go to the  /research directory and in the terminal, run:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 `composer require vladimir-yuldashev/laravel-queue-rabbitmq`
 
-4. Copy the the three existing .env.example files to three new .env files
+4. Copy the three existing .env.example files to three new .env files
 
 >Note: The three .env.example files (Governance/.env.example, Finance/.env.example and Research/.env.example) already contain the configuration settings needed for the mysql database connection and RabbitMQ. 
 
