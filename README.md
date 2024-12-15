@@ -59,7 +59,7 @@ Please refer to the section [**Documentation**](#documentation) below to view an
 
 4. Copy the the three existing .env.example files to three new .env files
 
-&nbsp;&nbsp;Note: The three .env.example files (Governance/.env.example, Finance/.env.example and Research/.env.example) already contain the configuration settings needed for the mysql database connection and RabbitMQ. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note: The three .env.example files (Governance/.env.example, Finance/.env.example and Research/.env.example) already contain the configuration settings needed for the mysql database connection and RabbitMQ. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You should adapt those settings to your development environment.
 
