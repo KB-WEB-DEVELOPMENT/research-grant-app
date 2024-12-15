@@ -23,14 +23,14 @@ My Laravel web application is built on top of  three microservices:
 
 To understand how the three microservices work with one another, I encourage you to look at: 
 
-1. the section [**Screenshots**](#screenshots) below 
-2. the section [**Usage**](#usage) below which contains the project REST API verbs and their description
+1. the [**Screenshots**](#screenshots) section below 
+2. the [**Usage**](#usage) section below which contains the project REST API verbs and their description
 
 A microservice architecture based application requires **queues** (of the type **"direct exchange queues"** in our case) when (1) the **publisher** publishes a message and (2) **the consumer** consumes that message.
 
 A number of tools are necessary in order to build a Laravel microservices architecture based application.
 
-Please refer to the section [**Documentation**](#documentation) below to view and access each of the references listed below.
+Please refer to the [**Documentation**](#documentation) section below to view and access each of the references listed below.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**[Ref. 1]** *Laravel Sail:  Laravel's default Docker development environment*
 
