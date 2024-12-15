@@ -20,7 +20,7 @@ class Finance extends Model
     *
     * @var array<int, string>
     */
-    protected $fillable = ['researcher_grant_id','researcher_grant_status','staff_comment'];
+    protected $fillable = ['id','researcher_grant_id','researcher_grant_status','staff_comment'];
 
 	/**
     * Write code on Method
