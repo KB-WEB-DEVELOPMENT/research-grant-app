@@ -13,7 +13,7 @@ In previous projects, I used a **monolithic architecture** to build web applicat
 
 In this project, I use a **microservice architecture** to build a Laravel web application.
 
-In this application, a researcher associated with one of the four Research Institute departments applies for a research grant. The Finance department checks with the Governance department: If the yearly budget allocated for research projects in this department can cover the grant, the grant is approved. If it cannot, the grant is rejected.
+In this application, a researcher affiliated with one of the four Research Institute departments applies for a research grant. The Finance department checks with the Governance department: If the yearly budget allocated for research projects in this department can cover the grant, the grant is approved. If it cannot, the grant is rejected.
 
 My Laravel web application is built on top of  three microservices:
 
