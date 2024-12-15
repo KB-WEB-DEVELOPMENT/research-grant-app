@@ -150,7 +150,7 @@ The project REST API verbs and their description:
 
 1. Note that only **```one database```** and **```three tables```** are used in the project.
 
-2. A researcher can only submit a grant application. A Governance employee can only create a row entry in the Governance table. A Finance employee can only update the 'staff_comment' field value in a row entry in the Finance table.
+2. A researcher can only submit research grant applications. A Governance employee can only create row entries in the Governance table. A Finance employee can only update 'staff_comment' field values in row entries in the Finance table.
 
 3. In a more complex project, researchers, Governance employees and Finance employees would have to authenticate themselves.
 
