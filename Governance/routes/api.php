@@ -21,7 +21,7 @@ use App\Models\Governance;
 
 // Note that we are not using Laravel Sanctum, no need to generate API tokens for this project
 
-Route::middleware('auth:api')->get('/governance-bugdets',[GovernanceController::class,'index']);
+Route::middleware('auth:api')->get('/governance-budgets',[GovernanceController::class,'index']);
 
 Route::middleware('auth:api')->get('/governance-budgets/{governance}',[GovernanceController::class,'show']);
 
