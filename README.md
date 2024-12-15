@@ -170,7 +170,7 @@ The project REST API verbs and their description:
 
 3. Relation between the Application tables (Database Schema)
  
-![Relation between the Application tables (Database Schema](Research/public/project-image3.png "Relation between the Application tables (Database Schema")
+![Relation between the Application tables Database Schema](Research/public/project-image3.png "Relation between the Application tables - Database Schema")
 
 ## 6. Documentation <a name="documentation"></a>
 
