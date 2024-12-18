@@ -1,11 +1,11 @@
 # Table of contents
-1. [Project Description](#description)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Features](#features)
-5. [Screenshots](#screenshots)
-6. [Documentation](#documentation)
-7. [License](#license)
+1. [**Project Description**](#description)
+2. [**Installation**](#installation)
+3. [**Usage**](#usage)
+4. [**Features**](#features)
+5. [**Screenshots**](#screenshots)
+6. [**Documentation**](#documentation)
+7. [**License**](#license)
 
 ## 1. Project Description <a name="description"></a>
 
