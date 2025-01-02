@@ -120,7 +120,7 @@ php artisan key:generate
 
 11. Start the local development server
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the terminal, run:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In each directory (/finance, /governance and /research), go to the terminal and run:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`php artisan serve`
 
